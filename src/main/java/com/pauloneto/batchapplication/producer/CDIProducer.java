@@ -25,14 +25,9 @@ public class CDIProducer {
 	}
 
 	@Produces
-	public ActiveMQConnectionFactory createMQConnectionFactory(){
-		ActiveMQConnectionFactory factory = new ActiveMQConnectionFactory(ACTIVEMQ_BROKER_URL);
-		factory.setTrustAllPackages(true);
-		return factory;
-	}
-
-	@Produces
 	public Logger createLogger(InjectionPoint injectionPoint) {
 		return Logger.getLogger(injectionPoint.getMember().getDeclaringClass().getName());
 	}
+	
+
 }

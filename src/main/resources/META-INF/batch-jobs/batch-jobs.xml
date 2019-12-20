@@ -1,0 +1,16 @@
+<job id="JobImportaCotaParlamentar" xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="1.0" restartable="true">
+    <flow id="importarCotaParlamentar">
+        <step id="lerCotaParlamentarDoArquivoAnoAtual">
+            <chunk item-count="5">
+                <reader ref="itemReaderCotaParlamentar"></reader>
+                <writer ref="itemWriterCotaParlamentar"></writer>
+            </chunk>
+            <!-- next on="COMPLETED" to="sintetizarInformacao"/ -->
+        </step>
+    </flow>
+    <!--flow id="sintetizarInformacao">
+        <step id="sintetizarPorPartido">
+            <batchlet ref="sintetizarPorPartido"></batchlet>
+        </step>
+    </flow -->
+</job>
