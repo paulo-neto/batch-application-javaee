@@ -15,7 +15,7 @@
         <jnosql.version>0.0.7</jnosql.version>
         <lombok.version>1.18.4</lombok.version>
         <weld.version>3.0.5.Final</weld.version>
-        <jackson.databind.version>2.9.10.1</jackson.databind.version>
+        <jackson.databind.version>2.9.10.4</jackson.databind.version>
         <code.gson.version>2.8.5</code.gson.version>
         <activemq.client.and.broker.version>5.15.11</activemq.client.and.broker.version>
         <commons.email.version>1.5</commons.email.version>
